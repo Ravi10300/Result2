@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="parents">
+      
+        <div class="child">
+            <div class="h">
+                <h2>Marksheet</h2>
+                </div>
+            <div class="pp">
+            <img src="logo.png" alt="SAITM">
+            </div>
+           
+            <!-- <hr size="2px" color="red"> -->
+            <table class="intro" border="2px">
+                <tr>
+                    <th>Name of Student</th>
+                    <th id="a"></th>
+                </tr>
+                <tr>
+                    <th>Father Name</th>
+                    <th id="b"></th>
+                </tr>
+                <tr>
+                    <th>Mother Name</th>
+                    <th id="c"></th>
+                </tr>
+                <tr>
+                    <th>Registration No</th>
+                    <th id="d"></th>
+                </tr>
+                <tr>
+                    <th>Roll No</th>
+                    <th id="e"></th>
+                </tr>
+            </table>
+            <div class="photo">
+            </div>
+            <hr>
+            <table style="width:100%" class="mrk">
+                <tr class="c">
+                  <th>Sr.No</th>
+                  <th>Subject</th>
+                  <th>Full Mark</th>
+                  <th>Pass Mark</th>
+                  <th>Theory</th>
+                  <th>Practical</th>
+                  <th>Total</th>
+              
+                </tr>
+                <tr>
+                  <td class="a">1.</td>
+                  <td>Math</td>
+                  <td>100</td>
+                  <td>30</td>
+                  <td id="aa"></td>
+                  <td></td>
+                  <td id="ab"></td>
+                </tr>
+                <tr>
+                  <td class="a">2.</td>
+                  <td>English</td>
+                  <td>100</td>
+                  <td>30</td>
+                  <td id="ac"></td>
+                  <td></td>
+                  <td id="ad"></td>
+                </tr>
+                 <tr>
+                  <td class="a">3.</td>
+                  <td>Hindi</td>
+                  <td>100</td>
+                  <td>30</td>
+                  <td id="ae"></td>
+                  <td></td>
+                  <td id="af"></td>
+                </tr>
+                 <tr>
+                  <td class="a">4.</td>
+                  <td>Science</td>
+                  <td>100</td>
+                  <td>30</td>
+                  <td id="ag"></td>
+                  <td id="ah"></td>
+                  <td id="ai"></td>
+                </tr>
+                 <tr>
+                  <td class="a">5.</td>
+                  <td>S.Science</td>
+                  <td>100</td>
+                  <td>30</td>
+                  <td id="aj"></td>
+                  <td id="ak"></td>
+                  <td id="al"></td>
+                  
+                    <tr  >
+                        <td colspan="6" class="tt">Total</td>
+                        <td id="to" class="tt"></td>
+                    </tr>
+              </table>
+              <table class="dd">
+              <tr>
+                <td>Division</td>
+                <td id="don"></td>
+            </tr>
+              </table>
+              
+            
+        </div>
+    </div>
+    
+    
+    <script>
+                                                          // This is for Introduction
+
+        let a=prompt('Enter Name of Student');
+        let b=prompt('Enter Name of Father');
+        let c=prompt('Enter Name of Mother');
+        let d=parseInt(prompt('Enter Name of Reg.No'));
+     let e=parseInt(prompt('Enter Name of Roll No.'));
+
+
+        document.getElementById('a').innerHTML=a
+        document.getElementById('b').innerHTML=b
+        document.getElementById('c').innerHTML=c
+        document.getElementById('d').innerHTML=d
+        document.getElementById('e').innerHTML=e
+
+                                                             // This Section For Table
+
+        let aa=parseInt(prompt('Enter Theory of Math='));
+        let ac=parseInt(prompt('Enter Theory of English='));
+        let ae=parseInt(prompt('Enter Theory of Hindi='));
+        let ag=parseInt(prompt('Enter Theory of Science='));
+        let ah=parseInt(prompt('Enter Prct. Mark of Science='));
+        let aj=parseInt(prompt('Enter Theory of S.science='));
+        let ak=parseInt(prompt('Enter Prct. Mark of S.Science='));
+
+        document.getElementById('aa').innerHTML=aa
+        document.getElementById('ac').innerHTML=ac
+        document.getElementById('ae').innerHTML=ae
+        document.getElementById('ag').innerHTML=ag
+        document.getElementById('ah').innerHTML=ah
+        document.getElementById('aj').innerHTML=aj
+        document.getElementById('ak').innerHTML=ak
+
+                                                                // This section For Total
+
+        document.getElementById('ab').innerHTML=aa
+        document.getElementById('ad').innerHTML=ac
+        document.getElementById('af').innerHTML=ae
+        document.getElementById('ai').innerHTML=ag+ah
+        document.getElementById('al').innerHTML=aj+ak
+
+         
+         document.getElementById('to').innerHTML=aa+ac+ae+ag+ah+aj+ak
+       
+        //  var don=500;
+        //  {
+        //  if(don >=450 && don <=500){
+        //     document.write("Merit");
+        //  }
+        //  else if(don >=450 && don<=300){
+        //     document.write("First");
+        //  }
+        //   else if(don >=225 && don<=299){
+        //     document.write("second");
+        //  }
+        //   else if(don >=125 && don<=224){
+        //     document.write("Third");
+        //  }
+        //   else if(don >=1 && don<=124){
+        //     document.write("Fail");
+        //  }
+        //  else{
+        //     document.write("Invalid");
+        //  }
+        // }
+
+
+       
+
+    </script>
+    
+</body>
+</html>

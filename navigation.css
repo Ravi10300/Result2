@@ -1,0 +1,122 @@
+ *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+           
+        }
+        body{
+            background: papayawhip;
+        }
+        
+        nav{
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0px 100px;
+            position: fixed;
+            background: purple;
+        }
+        nav .logo p{
+            font-size: 30px;
+          font-weight:bold ;
+          float: left;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          cursor: pointer;
+
+        }
+        nav ul{
+            float: right;
+
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+
+        }
+        nav li a{
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 0px 30px;
+            color: white;
+            text-decoration: none;
+        }
+        nav li a:hover{
+            color: yellow;
+            transition: all 0.4s ease 0s;
+        }
+
+         .img{
+            width: 50px;
+            height: 70px;
+            background-size: cover;
+            background-position: center;
+
+        }
+          .stt{
+            animation: SKY 2s infinite;
+          }
+          @keyframes SKY{
+            0%{
+                color: rgba(196, 151, 28, 0.86);
+            }
+             10%{
+                color: rgb(85, 225, 240);
+            }
+            20%{
+                color: rgb(209, 11, 235);
+            }
+            30%{
+                color:pink;
+            }
+            40%{
+                color: rgb(216, 244, 8);
+            
+        }
+        50%{
+                color: rgb(223, 214, 221);
+            }
+            60%{
+                color: rgb(179, 58, 173);
+            }
+            70%{
+                color: rgb(227, 19, 161);
+            }
+            85%{
+                color:pink;
+            }
+            100%{
+                color: rgb(216, 244, 8);
+            
+        }
+    }
+    .saitm{
+        margin-top: 6%;
+        margin-left: 45%;
+        border:dashed ;
+        border-radius: 20px;
+        /* background-color: aqua; */
+      
+    }
+
+   .h{
+    margin-top: 100px;
+    height: 100px;
+    color: red;
+    
+   }
+   .p{
+    margin-top: 20px;
+   }
+   img.b1{
+    width: 100%;
+    height: 350px;
+}
+.pt{
+    font-weight: bold;
+    color: black;
+
+}
+
+   
